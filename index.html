@@ -6,21 +6,35 @@
     <title>Fun Fact Generator</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c'); /* Background image */
+            background-size: cover;
+            background-position: center;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            color: white;
         }
 
         .container {
             text-align: center;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-in-out; /* Animation */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
         }
 
         button {
@@ -31,10 +45,29 @@
             background-color: #007bff;
             color: white;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
         button:hover {
             background-color: #0056b3;
+        }
+
+        img {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 300px; /* Limit image size */
+            border-radius: 10px;
+            opacity: 0; /* Start hidden for animation */
+            animation: fadeIn 1s ease-in-out forwards; /* Animation for image */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
     </style>
 </head>
@@ -43,9 +76,10 @@
         <h1>Random Programming Language Fact</h1>
         <p id="fact"></p>
         <button id="new-fact">Get a New Fact</button>
+        <img id="fact-image" src="" alt="Programming Image" />
     </div>
     <script>
-       const facts = [
+        const facts = [
     "The first high-level programming language was Fortran, developed in the 1950s.",
     "The name 'Java' comes from Java coffee, which was consumed by the developers.",
     "C was developed in the early 1970s at Bell Labs for system programming.",
@@ -141,10 +175,14 @@
     "The programming language V is designed for simplicity and performance."
 ];
 
-
         function getRandomFact() {
             const randomIndex = Math.floor(Math.random() * facts.length);
-            document.getElementById('fact').innerText = facts[randomIndex];
+            document.getElementById('fact').innerText = facts[randomIndex].text;
+            document.getElementById('fact-image').src = facts[randomIndex].image;
+            document.getElementById('fact-image').style.opacity = 0; // Reset opacity for animation
+            setTimeout(() => {
+                document.getElementById('fact-image').style.opacity = 1; // Fade in image
+            }, 100); // Delay to allow for opacity reset
         }
 
         document.getElementById('new-fact').addEventListener('click', getRandomFact);
