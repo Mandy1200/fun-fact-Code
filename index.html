@@ -80,100 +80,47 @@
     </div>
     <script>
         const facts = [
-    "The first high-level programming language was Fortran, developed in the 1950s.",
-    "The name 'Java' comes from Java coffee, which was consumed by the developers.",
-    "C was developed in the early 1970s at Bell Labs for system programming.",
-    "The first version of the C++ programming language was released in 1985.",
-    "PHP was originally created as a set of tools for building personal home pages.",
-    "The programming language Lisp was created in 1958 and is one of the oldest programming languages still in use.",
-    "Ruby was designed to be a more powerful and flexible alternative to Perl.",
-    "Swift was introduced by Apple in 2014 as a replacement for Objective-C.",
-    "The first version of Python was released in 1991.",
-    "JavaScript was created in just 10 days by Brendan Eich.",
-    "COBOL was designed for business data processing and is still used in legacy systems.",
-    "The first computer virus, called 'Creeper', was written in the early 1970s.",
-    "Ada Lovelace is often credited as the first computer programmer.",
-    "The 'Hello, World!' program is a traditional first program for many programming languages.",
-    "The programming language R is widely used for statistical computing and graphics.",
-    "Visual Basic was developed by Microsoft to enable rapid application development.",
-    "The programming language Go was designed by Google to improve programming productivity.",
-    "Rust was created to provide memory safety without using garbage collection.",
-    "The programming language Kotlin is fully interoperable with Java.",
-    "Scala is a hybrid functional programming language that runs on the Java Virtual Machine.",
-    "The programming language Haskell is known for its strong static typing and lazy evaluation.",
-    "The first version of SQL was developed in the early 1970s for managing relational databases.",
-    "The programming language Perl is known for its text processing capabilities.",
-    "The programming language Dart was developed by Google for building web and mobile applications.",
-    "The programming language Elixir is built on the Erlang VM and is known for its concurrency.",
-    "The programming language F# is a functional-first language that runs on the .NET framework.",
-    "The programming language C# was developed by Microsoft as part of its .NET initiative.",
-    "The programming language Julia is designed for high-performance numerical and scientific computing.",
-    "The programming language Scheme is a dialect of Lisp and emphasizes functional programming.",
-    "The programming language Prolog is based on formal logic and is used in artificial intelligence.",
-    "The programming language Groovy is an agile and dynamic language for the Java platform.",
-    "The programming language TypeScript is a superset of JavaScript that adds static types.",
-    "The programming language Assembly is a low-level language that is closely related to machine code.",
-    "The programming language Scratch is designed to teach programming concepts to children.",
-    "The programming language ActionScript was used for developing Flash applications.",
-    "The programming language Smalltalk is known for its pioneering role in object-oriented programming.",
-    "The programming language Apex is used for developing applications on the Salesforce platform.",
-    "The programming language Racket is a descendant of Scheme and is used for teaching programming.",
-    "The programming language Nim is designed for efficiency and expressiveness.",
-    "The programming language Crystal is inspired by Ruby and aims for performance.",
-    "The programming language Elm is designed for building web applications with a focus on simplicity.",
-    "The programming language Clojure is a modern Lisp dialect that runs on the JVM.",
-    "The programming language D is designed for system and application programming.",
-    "The programming language VHDL is used for hardware description and design.",
-    "The programming language Verilog is also used for hardware description and design.",
-    "The programming language OCaml is known for its powerful type system and functional programming features.",
-    "The programming language ABAP is used for developing applications on the SAP platform.",
-    "The programming language Tcl is known for its simplicity and extensibility.",
-    "The programming language PostScript is used for describing the appearance of printed pages.",
-    "The programming language XSLT is used for transforming XML documents.",
-    "The programming language Ceylon is designed for modular programming.",
-    "The programming language PureScript is a strongly-typed functional programming language that compiles to JavaScript.",
-    "The programming language ClojureScript is a version of Clojure that compiles to JavaScript.",
-    "The programming language Raku is designed for high-level programming and is known for its expressive syntax.",
-    "The programming language Gherkin is used for writing behavior-driven development (BDD) tests.",
-    "The programming language V is designed for simplicity and performance.",
-    "The programming language C++ is an extension of the C programming language with object-oriented features.",
-    "The programming language Ada is named after Ada Lovelace, the first computer programmer.",
-    "The programming language ActionScript was used for developing Flash applications.",
-    "The programming language F# is a functional-first language that runs on the .NET framework.",
-    "The programming language R is widely used for statistical computing and graphics.",
-    "The programming language SQL is used for querying and manipulating databases.",
-    "The programming language CSS is used for styling web pages.",
-    "The programming language HTML is the standard markup language for creating web pages.",
-    "The programming language JSON is a lightweight data interchange format.",
-    "The programming language YAML is often used for configuration files.",
-    "The programming language Markdown is used for formatting plain text.",
-    "The programming language SML (Standard ML) is known for its type inference and functional programming.",
-    "The programming language RPG (Report Program Generator) is used for business applications.",
-    "The programming language PL/I is used for business, scientific, and engineering applications.",
-    "The programming language Simula is considered the first object-oriented programming language.",
-    "The programming language J is known for its concise syntax and array programming capabilities.",
-    "The programming language APL is known for its use of special symbols and array manipulation.",
-    "The programming language QML is used for designing user interfaces in Qt applications.",
-    "The programming language Forth is known for its stack-based architecture.",
-    "The programming language RPG is used primarily on IBM's iSeries systems.",
-    "The programming language PL/SQL is Oracle's procedural extension for SQL.",
-    "The programming language XQuery is used for querying XML data.",
-    "The programming language Ceylon is designed for modular programming.",
-    "The programming language Nim is designed for performance and expressiveness.",
-    "The programming language PureScript is a strongly-typed functional programming language that compiles to JavaScript.",
-    "The programming language Elm is designed for building web applications with a focus on simplicity.",
-    "The programming language Pike is known for its extensibility and dynamic typing.",
-    "The programming language Raku (formerly known as Perl 6) is designed for high-level programming.",
-    "The programming language GAMS is used for mathematical programming and optimization.",
-    "The programming language Max/MSP is used for music and multimedia applications.",
-    "The programming language Processing is designed for visual arts and graphics.",
-    "The programming language Scratch is designed to teach programming concepts to children.",
-    "The programming language Datalog is a declarative programming language used for databases.",
-    "The programming language ClojureScript is a version of Clojure that compiles to JavaScript.",
-    "The programming language Raku is designed for high-level programming and is known for its expressive syntax.",
-    "The programming language Gherkin is used for writing behavior-driven development (BDD) tests.",
-    "The programming language V is designed for simplicity and performance."
-];
+            {
+                text: "The name 'Python' comes from the British comedy series 'Monty Python's Flying Circus'.",
+                image: "https://example.com/python.jpg" // Replace with actual image URLs
+            },
+            {
+                text: "JavaScript was originally called 'Mocha' and then 'LiveScript' before it was renamed.",
+                image: "https://example.com/javascript.jpg"
+            },
+            {
+                text: "The first computer programmer is considered to be Ada Lovelace.",
+                image: "https://example.com/ada.jpg"
+            },
+            {
+                text: "The 'Hello, World!' program is often the first program written by beginners.",
+                image: "https://example.com/hello-world.jpg"
+            },
+            {
+                text: "C++ was originally called 'C with Classes' before being renamed.",
+                image: "https://example.com/cplusplus.jpg"
+            },
+            {
+                text: "PHP originally stood for 'Personal Home Page', but it now stands for 'PHP: Hypertext Preprocessor'.",
+                image: "https://example.com/php.jpg"
+            },
+            {
+                text: "The programming language 'COBOL' was designed in the 1950s for business data processing.",
+                image: "https://example.com/cobol.jpg"
+            },
+            {
+                text: "Ruby was inspired by Perl, Smalltalk, Eiffel, Ada, and Lisp.",
+                image: "https://example.com/ruby.jpg"
+            },
+            {
+                text: "The 'GOTO' statement was popularized by the programming language BASIC.",
+                image: "https://example.com/basic.jpg"
+            },
+            {
+                text: "Swift was designed to be easy to read and write, influenced by languages like Python and Ruby.",
+                image: "https://example.com/swift.jpg"
+            }
+        ];
 
         function getRandomFact() {
             const randomIndex = Math.floor(Math.random() * facts.length);
